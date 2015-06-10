@@ -21,7 +21,7 @@ if [ "$#" -eq 0 ]; then
 fi
 
 # add them to the queue. For testing, resizing to something manageable. 
-ts ~/OpenDroneMap/run.pl --resize-to 1200
+ts ~/OpenDroneMap/run.pl # --resize-to 1200
 
 # When the process is finished, email the zipped results
 # Future feature
