@@ -11,6 +11,8 @@ folder=$2
 # go to the directory with new files
 cd $1/$2
 
+rename 'y/A-Z/a-z/' *
+
 # Check to see if there are any .jpg files
 shopt -s nullglob
 set -- *.jpg
@@ -21,7 +23,7 @@ if [ "$#" -eq 0 ]; then
 fi
 
 # add them to the queue. For testing, resizing to something manageable. 
-ts ~/OpenDroneMap/run.pl # --resize-to 1200
+ts ~/opendronemap/run.pl # --resize-to 1200
 
 # When the process is finished, email the zipped results
 # Future feature
